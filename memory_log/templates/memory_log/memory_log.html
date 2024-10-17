@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block title %}Memories{% endblock %}
+
+{% block content %}
+     <section>
+          <h1 style="color: rgb(0, 0, 0); margin: auto; margin-top: 2rem; margin-bottom: 3rem; width: auto;
+          height: 45px; text-align: center; background-color: #ffffff; font-size: 32px;">MEMORIES</h1>
+
+          {% for memory in memories %}
+               <article style=" margin: auto; align-items: center; width: fit-content; height: fit-content; margin-bottom: 30px; 
+               border: solid #b5b5b5 0.5px;">
+                    <div style="width: 500px; height: fit-content;">
+                         <h1 style="color: white; text-align: center; padding-top: 1rem;"> 
+                              <a id="name-link" href="{% url 'memorials:memory' slug=memory.slug %}">
+                                   {{ memory.name }} 
+                              </a>
+                         </h1>
+                         
+                         <h4 style="font-weight: 500; font-style: normal; font-size: 11px; color: rgb(0, 0, 0); width: 500px; 
+                         height: 20px; text-align: center; background-color: #ffffff; margin-top: 0.1rem; 
+                         padding: 2px 2px;"> {{ memory.lifeline }} </h4>
+
+                         <p style="color: white; text-align: center;  white-space: nowrap; overflow: hidden; 
+                         text-overflow: ellipsis; padding-left: 20px; padding-right: 20px; padding-top: 5px; font-size: 12px;"> {{ memory.story }} </p>
+
+                         <h4 style="color: white; text-align: center; padding-bottom: 1rem; padding-top: 0.5rem; font-weight: 300; 
+                         font-style: normal; font-size: 12px"> {{ memory.date }} </h4>
+                    </div>
+                    
+               </article>
+          {% endfor %}
+          <a href="{% url 'memorials:log_memory' %}"><p style="color: white; text-align: center; padding-top: 1rem; padding-bottom: 4rem;">Log a new Memory</p></a>
+     </section>
+{% endblock %}
