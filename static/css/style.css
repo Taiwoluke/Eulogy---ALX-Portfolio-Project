@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #070709;
+    min-height: 100vh;
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    background-color: #242424;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14rem;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 3.2rem;
+}
+
+ul a{
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: whitesmoke;
+    font-size: 0.7rem;
+    letter-spacing: 0.001rem;
+}
+
+li:hover {
+   background-color: #070709;;
+   padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+   border-radius: 1rem;
+   box-shadow: 0.2rem;
+}
+
+li:active {
+        background-color: #070709;;
+        padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+        border-radius: 1rem;
+        box-shadow: 0.2rem;
+}
+
+li:visited {
+    background-color: #070709;;
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem;
+}
+
+#hero-main-question {
+    color: whitesmoke;
+    text-align: center;
+    padding: 5rem 0rem 2rem 0rem;
+    font-size: 3rem;
+}
+
+#log-memory-button {
+    color: #29292d;
+    font-size: 1.2rem;
+    background-color: whitesmoke;
+    max-width: 12rem;
+    text-align: center;
+    margin: auto;
+    border-radius: 15rem;
+    margin-top: 2rem;
+    padding: 0.2rem 0.2rem;
+}
+
+@keyframes gray-white-scale {
+    0% { color: whitesmoke; }
+    50% { color: #29292d}
+    100% { color: whitesmoke; }
+}
+
+#alive-text-blinker {
+    animation-name: gray-white-scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+#line {
+    width: 100%;
+    height: 0.005rem;
+    background-color: #29292d;
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+#memory_logger_hero_text {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5rem 0rem 5rem 0rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#name {
+    width: 50px;
+    height: 10px;
+}
+
