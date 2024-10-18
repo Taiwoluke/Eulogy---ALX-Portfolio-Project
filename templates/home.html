@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content%}
+    <h1 id="hero-main-question">How do you stay <span id="alive-text-blinker">Alive</span><br>when you are Dead?</h1>
+
+    <div>
+        <p style="color: white; text-align: center; font-weight: 300; font-size: 13px;">Whether you think death is an end or a new beginning...</p>
+        <p style="color: white; text-align: center; font-weight: 300; font-size: 13px;">All we know is, noone gone, deserves to be forgotten...</p>
+        <p style="color: white; text-align: center; font-weight: 300; font-size: 13px;">Welcome to Eulogy, where we preserve the memories...</p>
+        <p style="color: white; text-align: center; font-weight: 300; font-size: 13px;">of the loved ones we have lost, saying farewell to...</p>
+        <p style="color: white; text-align: center; font-weight: 300; font-size: 13px;">parent, spouse, friend, sibling, child, mentor... </p>
+    </div>
+
+    <a href="{% url 'memorials:log_memory' %}"><h1 style="margin-top: 50px;" id="log-memory-button">Log a Memory</h1></a>
+
+{% endblock %}

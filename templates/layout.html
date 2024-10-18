@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/main.js' defer%}"></script>
+    <title> {% block title %}Eulogy{% endblock %} </title>
+</head>
+<body>
+    <nav>
+        <a href="/"><img style="margin: 12.5px 10px;" src="/static/images/eulogywhite.png" width="90px" height="19.2px" alt="logo"></a>
+
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="{% url 'memorials:log_memory' %}"><li>Log a Memory</li></a>
+            <a href="{% url 'memorials:memories' %}"><li>Memory Stick</li></a>
+            <a href="/lawyer"><li>Find a Lawyer</li></a>
+            <a href="/funeral"><li>Funeral Homes</li></a>
+            <a href="/about"><li> About Eulogy </li></a>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+
+
