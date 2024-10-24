@@ -236,3 +236,16 @@ li:visited {
 }
 
 
+
+/* styling for Home page */
+
+.message-text {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+#log-memory-button {
+    margin-top: 50px;
+}
