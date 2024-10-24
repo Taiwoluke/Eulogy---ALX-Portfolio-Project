@@ -159,6 +159,10 @@ li:visited {
     margin-bottom: 25px;
 }
 
+.images {
+    height: 165px;
+    width: 330px;
+}
 
 .content-2 {
     color: white;
@@ -168,6 +172,11 @@ li:visited {
     text-align: left; 
     padding-bottom: 80px;
 }
+
+
+/*styling the Funeral Home page */
+
+
 
 
 
