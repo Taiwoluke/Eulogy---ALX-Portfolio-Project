@@ -249,3 +249,77 @@ li:visited {
 #log-memory-button {
     margin-top: 50px;
 }
+
+
+/* styling for find a lawyer page*/
+
+#find-lawyer-title {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: auto;
+    padding: 0px 0px;
+    height: 45px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.lawyer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: 600px;
+    height: 150px;
+    background-color: rgb(20, 20, 20);
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.lawyer-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: 600px;
+    height: 150px;
+    background-color: rgb(20, 20, 20);
+    margin: auto;
+    margin-bottom: 50px;
+    margin-bottom: 5px;
+}
+
+.lawyer-image {
+    border: solid white 4.5px;
+    height: 150px;
+    width: 150px;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    color: #bebebe;
+}
+
+.information-heading {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.information-content {
+    font-weight: 300;
+    font-style: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.seperator {
+    border: none;
+    height: 0.5px;
+    background-color: #ffffff;
+}
