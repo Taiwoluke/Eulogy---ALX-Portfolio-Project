@@ -3,24 +3,35 @@
 {% block title %}Log Memory{% endblock %}
 
 {% block content%}
+<!-- Memory logging form page -->
 <h1 class="page-title">LOG A MEMORY</h1>
 
+<!-- Form container wrapper -->
 <div class="form-container">
+
+    <!-- Memory submission form -->
     <form class="memory-form" action="{% url 'memorials:log_memory' %}" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        
+
+        <!-- Full name input field -->
         <input type="text" class="form-input" placeholder="Write their Full Name..." id="name" name="name">
         
+        <!-- Life summary input field -->
         <input type="text" class="form-input" placeholder="Write a summary of their life(in less than 30 words)..." id="lifeline" name="lifeline">
         
+         <!-- Main story textarea -->
         <textarea class="form-textarea" placeholder="Write a story that captures their major life footprints..." id="story" name="story"></textarea>
         
+        <!-- Image upload instruction label -->
         <label class="image-label" for="story">Add a 'square' Image of your late loved one(200 x 200)...</label>
         
+        <!-- Profile image upload input -->
         <input type="file" class="file-input" src="" alt="" id="profile" name="profile">
         
+        <!-- URL slug input field -->
         <input type="text" class="form-input" placeholder="Add a slug(their first name, preferably)..." id="slug" name="slug">
         
+        <!-- Form submission button -->
         <input type="submit" class="submit-button" value="SUBMIT">
     </form>
 </div>
