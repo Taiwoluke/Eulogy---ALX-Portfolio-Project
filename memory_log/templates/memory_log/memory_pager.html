@@ -3,24 +3,26 @@
 {% block title %} {{memory.name}} {% endblock %}
 
 {% block content %}
-    <section>
-    <div style="display: flex; flex-direction: column; gap: 5px; justify-content: center; margin: auto; 
-        width: 1000px; height: 100px; margin-top: 200px;">
-
-        <h1 style="color: rgb(0, 0, 0); margin-top: 2rem; margin-bottom: 0.4rem; width: 1000px; 
-        height: 40px; text-align: center; background-color: #ffffff;">{{memory.name}}</h1> 
+    <!-- Memory detail page section -->
+<section>
+    <!-- Main content wrapper -->
+    <div class="memory-detail-container">
+        <!-- Memory name/title -->
+        <h1 class="name-detail">{{memory.name}}</h1>
         
-        <h4 style="color: rgb(255, 255, 255); margin-bottom: 2rem; width: 1000px; 
-        height: 70px; padding: 5px 5px; text-align: center; background-color: #242424; font-weight: normal; 
-        font-style: normal; font-size: 12px;"> {{ memory.lifeline }} </h4>
-
-        <div style="display: flex; flex-direction: row; padding: 10px 10px 10px 10px; border: solid #b5b5b5 0.5px;">
-            <img style="width: 200px; height: 200px; display: block; margin: left;" src=" {{ memory.profile.url }} " alt=" {{ memory.name }} ">
-            <p style="color: white; padding-left: 2rem;"> {{ memory.story }} </p>
+        <!-- Brief life summary -->
+        <h4 class="lifeline-detail">{{ memory.lifeline }}</h4>
+        
+        <!-- Profile image and story container -->
+        <div class="profile-story-container">
+            <!-- Profile image -->
+            <img class="profile-image" src="{{ memory.profile.url }}" alt="{{ memory.name }}">
+            <!-- Main story text -->
+            <p class="story-detail">{{ memory.story }}</p>
         </div>
         
-        <h4 style="color: #b5b5b5; padding-bottom: 4rem; padding-top: 1rem; padding: 10px 0px 0px 10px; font-weight: normal; font-style: normal; 
-        font-size: 12px"> {{ memory.date }} </h4>
+        <!-- Memory creation date -->
+        <h4 class="date-detail">{{ memory.date }}</h4>
     </div>
-    </section>
+ </section>
 {% endblock %}
