@@ -323,3 +323,224 @@ li:visited {
     height: 0.5px;
     background-color: #ffffff;
 }
+
+
+/* styling for memory log */
+
+.page-title {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: auto;
+    padding: 0px 0px;
+    height: 45px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.memory-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.form-input {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 1.5rem;
+    padding-left: 25px;
+    border-radius: 0px;
+    border-style: none;
+}
+
+.form-textarea {
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    resize: none;
+    width: 400px;
+    height: 30px;
+    padding-left: 25px;
+    border-radius: 0px;
+    border-style: none;
+    padding-top: 0.3rem;
+}
+
+.image-label {
+    color: white;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 1px;
+    font-size: 11px;
+}
+
+.file-input {
+    display: flex;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+}
+
+.submit-button {
+    margin-bottom: 200px;
+    margin-top: 1rem;
+    width: 400px;
+    height: 35px;
+    margin: auto;
+    background-color: rgb(67, 67, 67);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* styling for memory section */
+
+.memories-title {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: auto;
+    height: 45px;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 32px;
+}
+
+.memory-card {
+    margin: auto;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 30px;
+    border: solid #b5b5b5 0.5px;
+}
+
+.memory-content {
+    width: 500px;
+    height: fit-content;
+}
+
+.memory-name {
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.memory-lifeline {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    width: 500px;
+    height: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 0.1rem;
+    padding: 2px 2px;
+}
+
+.memory-story {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.memory-date {
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.new-memory-link {
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Styles for memory detail page */
+
+.memory-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    margin: auto;
+    width: 1000px;
+    height: 100px;
+    margin-top: 200px;
+}
+
+.name-detail {
+    color: rgb(0, 0, 0);
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.lifeline-detail {
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    width: 1000px;
+    height: 70px;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: #242424;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.profile-story-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px 10px 10px;
+    border: solid #b5b5b5 0.5px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: left;
+}
+
+.story-detail {
+    color: white;
+    padding-left: 2rem;
+}
+
+.date-detail {
+    color: #b5b5b5;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding: 10px 0px 0px 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+}
